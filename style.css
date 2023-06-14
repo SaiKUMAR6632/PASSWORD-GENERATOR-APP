@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:rebeccapurple;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+.pw-header{
+    padding: 1rem;
+}
+.pw-container{
+    background-color:rgb(46,12,80);
+    min-width: 400px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+.pw{
+    padding: 1rem;
+    background-color: rebeccapurple;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size:2rem;
+    overflow:auto;
+}
+.pw-body{
+    padding:0 1rem 1rem;
+}
+.pw button{
+    background-color: white;
+    border: none;
+    color:rgb(29,2,56);
+    cursor:pointer;
+    padding: 0.25rem;
+    font-family:inherit;
+    font-weight:bold;
+    position:absolute;
+    top:0;
+    right:0;
+    transform: translate(0,20%);
+    transition:opacity 0.2s ease,transform 0.2s ease;
+    opacity:0;
+}
+.pw:hover button{
+    opacity:1;
+    transform:translate(0,0);
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem ;
+}
+.generate{
+    background-color: #ecb602;
+    border: none;
+    color:rebeccapurple;
+    display:block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight:bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
